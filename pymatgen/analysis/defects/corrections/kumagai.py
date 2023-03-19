@@ -85,8 +85,8 @@ def get_efnv_correction(
         **kwargs: Keyword arguments to pass to `make_efnv_correction`.
     """
     # ensure that the structures have the "potential" site property
-    bulk_potentials = [site.properties["potential"] for site in defect_structure]
-    defect_potentials = [site.properties["potential"] for site in bulk_structure]
+    bulk_potentials = [site.properties["potential"] for site in bulk_structure]
+    defect_potentials = [site.properties["potential"] for site in defect_structure]
 
     defect_calc_results = CalcResults(
         structure=defect_structure,
